@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>DeepRecSys Tutorial @ IJCAI2021</title>
+
+    <!-- favicon 
+    <link href="favicon.png" rel=icon>-->
+
+    <!-- web-fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Roboto:210,300,400,700,500' rel='stylesheet' type='text/css'>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Style CSS -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body id="page-top" data-spy="scroll" data-target=".navbar">
+<div id="main-wrapper">
+    <!-- Page Preloader -->
+    <div id="preloader">
+        <div id="status">
+            <div class="status-mes"></div>
+        </div>
+    </div>
+
+    <header class="header">
+        <!-- Navigation -->
+        <nav class="navbar main-menu" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <!--<a class="navbar-brand page-scroll" href="#page-top"><img src="img/logo.png" alt=""></a>-->
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                    <ul class="nav navbar-nav">
+                        <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                        <li class="hidden"><a href="#page-top"></a></li>
+                        <li><a class="page-scroll" href="#section-intro">Intro</a></li>
+                        <!-- <li><a class="page-scroll" href="#section-cfp">Cfp</a></li>
+                        <li><a class="page-scroll" href="#section-date">DATES</a></li>
+                        <li><a class="page-scroll" href="#section-ajenda">Program</a></li>
+                        <li><a class="page-scroll" href="#section-speaker">Speakers</a></li>
+                        <li><a class="page-scroll" href="#section-papers">Accepted Papers</a></li>-->
+                        <li><a class="page-scroll" href="#section-organizer">Tutors</a></li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container -->
+        </nav>
+
+        <!-- .nav -->
+
+    </header>
+
+    <div class="jumbotron text-center">
+        <div class="content">
+            <h1>Deep Learning for Recommendations:</br> Fundamentals and Advances</h1>
+	    <h2 style="color:#FFFFFF;"><b>Keywords: DNNs, DRL, GNNs, AutoML, Adversarial Attacks, Trustworthy Recommendations</b> </h2>
+	    <h2 style="color:#FFFFFF;"><b>Aug 20 20:00 – 2:00 (Next day) Montreal Time (UTC-4) </b> </h2>
+            <!--<div class="event-date">9:00 - 11:45 PM, April 16, 2021 (EST time)</div>-->
+	     <!--
+	    <h2 style="color:#FFFFFF;"><b>Zoom Link:  <a href="https://zoom.virtualchair.net/ijcai9/V9zt6w">https://zoom.virtualchair.net/ijcai9/V9zt6w </a ></b> </h2>
+
+		<h2 style="color:#FFFFFF;"><b>Introduction</b> </h2>
+	    <h2 style="color:#FFFFFF;"><b>Fundamentals of Deep Recommender Systems</b> </h2>
+	    <h2 style="color:#FFFFFF;"><b>Reinforcement Learning for Recommender Systems</b> </h2>
+	    <h2 style="color:#FFFFFF;"><b>Graph Neural Network for Recommendations</b> </h2>
+	    <h2 style="color:#FFFFFF;"><b>Automated Machine Learning for Recommender Systems</b>  </h2>
+            <h2 style="color:#FFFFFF;"><b>Adversarial Attacks for Recommender Systems </b>  </h2>
+	    -->
+	    <!--<h2 style="color:#0F1555;"><b><a href="https://msu.zoom.us/j/94465359383">Zoom Link to Tutorial</a></b></h2>-->
+            <!--<div class="event-date">Summit 1 - Ground Level, Egan, Anchorage, Alaska - USA</div>
+            <!--<p class="lead">It's a tag line, where you can write a key point of your idea. It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+            <button type="button" class="btn btn-default btn-lg">STAY IN THE LOOP</button>-->
+        </div>
+    </div>
+    <!-- .Jumbotron-->
+    
+    
+    <!-- Introduction Section -->
+    <section id="section-intro" class="section-wrapper about-event">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h1>INTRO</h1>
+                </div>
+            </div>
+            <div class="row text-justify">
+                <div class="col-md-12">
+                   
+			<p class="large text-muted">
+			    Being able to provide personalized suggestions to each user, recommender systems have become an indispensable tool for mitigating the information overload problem in our daily lives, especially in many user-oriented online services. It not only facilitates users seeking information, but also benefits content providers with more potentials for making profits. Driven by the recent success in deep neural networks (DNNs), recommendation techniques have achieved promising performance under DNNs paradigm. However, most existing DNNs based methods suffer some drawbacks in practice. More specifically, they treat each interaction as a separate data instance and overlook the relations among instances. Meanwhile, they consider the recommendation procedure as a static process and make recommendations following a fixed greedy strategy. Also, the majority of existing DNNs based recommender systems are based on hand-crafted features, hyper-parameters, and deep neural network architectures. In addition, most existing deep recommender systems are vulnerable to adversarial attacks.       
+			</p>
+                    
+		<p class="large text-muted">
+			
+In this tutorial, we aim to give a comprehensive survey on the recent progress of advanced techniques in solving the above problems in deep recommender systems, including Graph Neural Networks (GNNs), Deep Reinforcement Learning (DRL), and Automated Machine Learning (AutoML). Meanwhile, we will introduce adversarial attacks for recommender systems.
+In this way, we expect researchers from the three fields to get an in-depth understanding and accurate insight into the spaces, stimulate more ideas and discussions, and promote technologies in recommendations.
+			
+			
+		</p>
+		<h2 style="color:black;"><b>Tutorial Syllabus </b> </h2>
+		<p class="large text-muted">
+		The topics of this tutorial include (but are not limited to) the following:
+		<ol>
+			<strong> <li style="color:black;">Introduction <a href="ijcai2021/RecSys_IJCAI_Intro.pdf">[Slides]</a> <a href="https://youtu.be/75L3l_J-tq0">[Video]</a></li>  </strong>
+			<strong> <li style="color:black;">Fundamentals of Deep Recommender Systems  <a href="ijcai2021/RecSys_IJCAI_DNN.pdf">[Slides]</a><a href="https://youtu.be/_M5S0Njmc_c">[Video]</a></li></strong>
+			<strong> <li style="color:black;">Reinforcement Learning for Recommender Systems  <a href="ijcai2021/RecSys_IJCAI_RL.pdf">[Slides]</a><a href="https://youtu.be/ffYejdEp9zw">[Video]</a></li></strong>
+			<strong> <li style="color:black;">Graph Neural Networks for Recommendations  <a href="ijcai2021/RecSys_IJCAI_GNNs.pdf">[Slides]</a><a href="https://youtu.be/4aXk3LNTJRc">[Video]</a></li></strong>
+			<strong> <li style="color:black;">Automated Machine Learning (AutoML) for Recommendations  <a href="ijcai2021/RecSys_IJCAI_AutoML.pdf">[Slides]</a><a href="https://youtu.be/DSMhIwU3q_0">[Video]</a></li></strong>
+			<strong> <li style="color:black;">Adversarial Attacks for Recommender Systems  <a href="ijcai2021/RecSys_IJCAI_Adversarial_Attacks.pdf">[Slides]</a><a href="https://youtu.be/ar1YMiVTo0Y">[Video]</a></li></strong>
+			<strong> <li style="color:black;">Deep Recommendations: Future Directions (Trustworthy RecSys)  <a href="ijcai2021/RecSys_IJCAI_future_directions.pdf">[Slides]</a>  <a href="https://youtu.be/ukZGTsRrziE">[Video]</a></li></strong>
+
+		</ol>
+	       <div>Videos: TBD</div>
+	       <div>Link to IJCAI2021 official Website:  <a href="https://ijcai-21.org/tutorials/">https://ijcai-21.org/tutorials/</a > </div>
+	     
+
+
+
+		</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <section id="section-organizer" class="section-wrapper team gray-bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-title">
+                        <h1>Presenters</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6 col-md-3">
+                    <figure class="thumbnail">
+                        <a href="https://wenqifan03.github.io/"><img src="img/wenqi.jpg" class="img-responsive" alt="Image"></a>
+                        <figcaption class="caption text-center">
+                            <h3>Wenqi Fan
+                                <small>Hong Kong Polytechnic University</small>
+                            </h3>
+                            <ul class="social-links">
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                <li><a href="#"><i class="fa fa-envelope"></i></a></li>
+                            </ul>
+                        </figcaption>
+                    </figure>
+                </div>
+                <!-- /.col-sm-6 -->
+                <div class="col-sm-6 col-md-3">
+                    <figure class="thumbnail">
+                        <a href="http://www.cse.msu.edu/~zhaoxi35/"><img src="img/img-team-7.jpg" class="img-responsive" alt="Image"></a>
+                        <figcaption class="caption text-center">
+                            <h3>Xiangyu Zhao
+                                <small>City University of Hong Kong</small>
+                            </h3>
+                            <ul class="social-links">
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                <li><a href="#"><i class="fa fa-envelope"></i></a></li>
+                            </ul>
+                        </figcaption>
+                    </figure>
+                </div>
+                <!-- /.col-sm-6 -->
+                
+                
+               
+                
+
+                <div class="col-sm-6 col-md-3">
+                    <figure class="thumbnail">
+                        <a href="http://www.yindawei.com/"><img src="img/img-team-2.jpg" class="img-responsive" alt="Image"></a>
+                        <figcaption class="caption text-center">
+                            <h3>Dawei Yin
+                                <small>Baidu</small>
+                            </h3>
+                            <ul class="social-links">
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                <li><a href="#"><i class="fa fa-envelope"></i></a></li>
+                            </ul>
+                        </figcaption>
+                    </figure>
+                </div>
+                <!-- /.col-sm-6 -->
+		    
+	   <div class="col-sm-6 col-md-3">
+                    <figure class="thumbnail">
+                        <a href="https://www.cse.msu.edu/~tangjili/"><img src="img/img-team-1.jpg" class="img-responsive" alt="Image"></a>
+                        <figcaption class="caption text-center">
+                            <h3>Jiliang Tang
+                                <small>Michigan State University</small>
+                            </h3>
+                            <ul class="social-links">
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                <li><a href="#"><i class="fa fa-envelope"></i></a></li>
+                            </ul>
+                        </figcaption>
+                    </figure>
+                </div>
+                <!-- /.col-sm-6 -->
+
+            </div>
+            <!-- .row -->
+
+            
+        </div>
+        <!-- /.container -->
+    </section>
+    <!-- .team -->
+    
+	
+
+<!-- Presenters’ Biography -->
+    <section id="section-intro" class="section-wrapper about-event">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h1>Presenters’ Biography</h1>
+                </div>
+            </div>
+            <div class="row text-justify">
+                <div class="col-md-12">
+                   
+			<p class="large text-muted">
+			    <a href="https://wenqifan03.github.io/"><strong>Dr. Wenqi Fan</strong></a >  is currently a research assistant professor of the Department of Computing at The Hong Kong Polytechnic University (PolyU).  He received his Ph.D. degree from City University of Hong Kong (CityU) in 2020. From 2018 to 2020, he was a visiting research scholar at Michigan State University, under the supervision of Dr. Jiliang Tang. 
+				His research interests are in the broad areas of machine learning and data mining, with a particular focus on recommender systems (RecSys), graph neural networks (GNNs), and adversarial attacks.
+He has published innovative papers in top-tier journals and conferences such as IEEE TKDE, KDD, WWW, ICDE, IJCAI, AAAI, RecSys, WSDM, COLING, and SDM.
+	           
+			</p>
+                    
+		<p class="large text-muted">
+ <a href="http://www.cse.msu.edu/~zhaoxi35/"><strong>Dr. Xiangyu Zhao</strong> </a >is an assistant professor of the school of data science at City University of Hong Kong (CityU). His current research interests include data mining and machine learning, especially (1) Reinforcement Learning, AutoML, and their applications in Information Retrieval (recommendation, computational advertising and search); (2) Urban Computing and Spatio-Temporal Data Analysis. He has published more than 20 papers in top conferences (e.g., KDD, WWW, SIGIR, AAAI, ICDE, CIKM, ICDM, WSDM, RecSys) and journals (e.g., SIGKDD, SIGWeb, EPL, APS). His research received Criteo Research Award, Bytedance Research Award, Top 100 Chinese New Stars in Artificial Intelligence and MSU Dissertation Fellowship. He serves as the organizers of DRL4KDD@KD'19, DRL4IR@SIGIR'20, 2nd DRL4KD@WWW'21, 2nd DRL4IR@SIGIR'21, and a lead tutor at WWW'21 and IJCAI'21. 	
+			
+		</p>
+			<p class="large text-muted">
+			   <a href="http://www.yindawei.com/"> <strong>Dr. Dawei Yin</strong></a > is Engineering Director at Baidu inc.. He is managing the search science team at Baidu, leading Baidu's science efforts of web search, question answering, video search, image search, news search, app search, etc.. Previously, he was Senior Director, managing the recommendation engineering team at JD.com between 2016 and 2020. Prior to JD.com, he was Senior Research Manager at Yahoo Labs, leading relevance science team and in charge of Core Search Relevance of Yahoo Search. He obtained Ph.D. (2013), M.S. (2010) from Lehigh University and B.S. (2006) from Shandong University. From 2007 to 2008, he was an M.Phil. student in The University of Hong Kong. His research interests include data mining, applied machine learning, information retrieval and recommender system. He published more than 80 research papers in premium conferences and journals, and was the recipients of WSDM2016 Best Paper Award, KDD2016 Best Paper Award, WSDM2018 Best Student Paper Award, and ICHI 2019 Best Paper Honorable Mention. He is one of the tutors of Information Discovery in E-commerce at SIGIR 2018.	           
+			</p>
+			
+			<p class="large text-muted">
+			   <a href="https://www.cse.msu.edu/~tangjili/"> <strong> Prof. Jiliang Tang </strong> </a >  is an associate professor (assistant professor, 2016-2021) in the computer science and engineering department at Michigan State University since Fall@2016. Before that, he was a research scientist in Yahoo Research. He got his PhD from Arizona State University in 2015 under Dr. Huan Liu and MS and BE from Beijing Institute of Technology in 2010 and 2008, respectively. His research interests include social computing, data mining and machine learning and their applications in education. He was the recipient of 2021 IEEE Big Data Security Junior Research Award, 2020 ACM SIGKDD Rising Star Award, 2020 Distinguished Withrow Research Award, 2019 NSF Career Award, and 7 best paper awards (or runner-ups) including WSDM2018 and KDD2016. His dissertation won the 2015 KDD Best Dissertation runner up and Dean's Dissertation Award. He serves as conference organizers (e.g., KDD, SIGIR, WSDM and SDM) and journal editors (e.g., TKDD and ACM Books). He has published his research in highly ranked journals and top conference proceedings, which have received tens of thousands of citations with h-index 61 (Google Scholar) and extensive media coverage.
+			</p>
+			
+			
+			
+			
+                </div>
+            </div>
+        </div>
+ </section>
+	
+	
+	
+    
+	<!--<script type="text/javascript" id="clustrmaps" src="//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=300&t=tt&d=HLV3wzuoy5w6fdv87RM292yQj8Fx-ZVDC2rRxEMmb4c"></script>
+	
+	<script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=Acuh9imKmpIQ6hMaZY-dWCyM9D0G1hr2tY5OxSXKd64&cl=ffffff&w=300&t=tt"></script>-->
+	
+	<!-- <script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=Fq6CbZOq1h3RPZeSeuIPhIeTeTwnXH_K-1qudBFjbd8&cl=ffffff&w=300&t=tt"></script>
+       -->
+	 <script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=TEhFKRv_Q2W5AaLVT1YP5lKcTW9k_6-6OY9leR1znNQ&cl=ffffff&w=300&t=tt"></script>
+       
+    <footer class="footer">
+        <div class="copyright-section">
+            <div class="container">
+                <div class="col-md-12">
+                    <div class="copytext text-center">Copyright &copy; 2018.Company name All rights reserved.<a target="_blank" href="http://sc.chinaz.com/moban/">Webpage Template</a></div>
+                </div>
+            </div>
+            <!-- .container -->
+        </div>
+        <!-- .copyright-section -->
+    </footer>
+    <!-- .footer -->
+
+</div>
+<!-- #main-wrapper -->
+
+
+<!-- jquery -->
+<script src="js/jquery-2.1.4.min.js"></script>
+
+<!-- Bootstrap -->
+<script src="js/bootstrap.min.js"></script>
+
+<!-- Plugin JavaScript -->
+<script src="js/jquery.easing.min.js"></script>
+
+<!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
+<!---<script src="https://maps.googleapis.com/maps/api/js"></script>--->
+
+<!--<script src="js/one-page-nav.js"></script>-->
+<script src="js/scripts.js"></script>
+</body>
+</html>
