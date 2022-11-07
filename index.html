@@ -74,13 +74,13 @@
 
     <div class="jumbotron text-center">
         <div class="content">
-            <h1>Automated Machine Learning for Recommender Systems:  </br> Fundamentals and Advances</h1>
-	    <h2 style="color:#FFFFFF;"><b>Keywords: Recommender Systems (RecSys), Deep Neural Networks (DNNs), Automated Machine Learning (AutoML)</b> </h2>
+            <h1>Trustworthy Recommender Systems</h1>
+	    <h2 style="color:#FFFFFF;"><b>Keywords: Recommender Systems, Robustness, Fairness, Explainability, Privacy, Environmental Well-being, Accountability, Auditability</b> </h2>
 	    
 	    <!-- <h2 style="color:#FFFFFF;"><b>Event Date: 4:45 PM - 6:15 PM (Beijing Time) or 10:45 AM - 12:15 PM (CEST Time), Tue. Apr 26, 2022 </b> </h2>
 	    <h2 style="color:#FFFFFF;"><b>Zoom Link: <a href="https://acm-org.zoom.us/j/99041282188?pwd=aUhCOTd3djdBM3F5QURLZnRlV210UT09">https://acm-org.zoom.us/j/99041282188?pwd=aUhCOTd3djdBM3F5QURLZnRlV210UT09</a> </b> </h2> 
 -->
-	    	    <h2 style="color:#FFFFFF;"><b>Our Survey Paper: <a href="https://arxiv.org/pdf/2204.01390.pdf"> Automated Machine Learning for Deep Recommender Systems: A Survey 
+	    	    <h2 style="color:#FFFFFF;"><b>Our Survey Paper: <a href="https://arxiv.org/pdf/2209.10117.pdf"> A Comprehensive Survey on Trustworthy Recommender Systems
 </a> </b> </h2>
 
 	    
@@ -123,17 +123,24 @@
                 <div class="col-md-12">
                    
 			<p class="large text-muted">
-			    Recommender systems have become increasingly important in our daily lives since they play an important role in mitigating the information overload problem, especially in many user-oriented online services. Recommender systems aim to identify a set of objects (i.e., items) that best match users’ explicit or implicit preferences, by utilizing the user and item interactions to improve the matching accuracy. With the fast advancement of deep neural networks (DNNs) in the past few decades, recommendation techniques have achieved promising performance. However, we face three inherent challenges to design deep recommender systems (DRS): 1) the majority of existing DRS are developed based on hand-crafted components, which requires ample expert knowledge of machine learning and recommender systems; 2) Human error and bias can lead to suboptimal components, which reduces the recommendation effectiveness; 3) Non-trivial time and engineering efforts are usually required to design the task-specific components in different recommendation scenarios. 
+			    In the past few decades, the growth of information exchange through the World Wide Web has resulted in extreme information explosion. To address information overload problems, recommender systems have been playing an increasingly important role in people’s daily lives via their successful deployments in various user-oriented online services, such as online shopping, jobs matching, financial product recommendations, and medical recommendations. More recently, inspired by the great success of Deep Neural Networks (DNNs) in powerful representation learning abilities, DNN-based recommendation techniques have shown impressive performance across a wide range of tasks. 
 
 			</p>
                     
 		<p class="large text-muted">
 			
-                In this tutorial,  we aim to give a comprehensive survey on the recent progress of advanced Automated Machine Learning (AutoML) techniques for solving the above problems in deep recommender systems.  In this way, we expect academic researchers and industrial practitioners in related fields can get deep understanding and accurate insight into the spaces, stimulate more ideas and discussions, and promote developments of technologies in recommendations. 	
+                Although recommender systems can benefit people in daily life, recent studies show that they can cause negative impacts on human beings. For example, recommender systems are highly vulnerable to adversarial attacks [ 6 ], where recommendation results can be manipulated by attackers with malicious desires. Meanwhile, the recommendation algorithms can inherit and even magnify the bias behaviors from training datasets, leading to discriminatory predictions for underrepresented groups [9]. In addition, recommender systems are also vulnerable to privacy attacks [8]. For instance, malicious attackers can infer users’ privacy information from public data. Due to the complicated working mechanisms, recommender systems often make black-box decisions that are hard to be explained to various stakeholders, resulting in unreliable recommendation predictions. These untrustworthy aspects in recommender systems can make unreliable recommendation results and then produce significant harmful effects in various real-world applications, especially those in safety-critical areas such as finance and healthcare, resulting in severe economic, social, and security consequences. To mitigate these untrustworthy aspects, a great amount of research on trustworthy recommender systems has emerged in recent years. 
 		
 			
 		</p>
+		
+		<p class="large text-muted">
 			
+		In this tutorial, we will provide a comprehensive overview of Trustworthy Recommender systems (TRec) with a specific focus on six of the most crucial aspects; namely, Safety & Robustness, Nondiscrimination & Fairness, Explainability, Privacy, Environmental Well-being, and Accountability & Auditability. For each aspect, we will summarize the recent related technologies and discuss potential research directions to help achieve trustworthy recommender systems in the future.
+			
+			
+			
+		</p>
 		
 		<p class="large text-muted">
 				
@@ -141,28 +148,30 @@
 		
 		<div>Zoom Link: <a href="https://acm-org.zoom.us/j/99041282188?pwd=aUhCOTd3djdBM3F5QURLZnRlV210UT09">https://acm-org.zoom.us/j/99041282188?pwd=aUhCOTd3djdBM3F5QURLZnRlV210UT09</a> </div>
 		-->	
-		<div>Our Survey Paper: <a href="https://arxiv.org/pdf/2204.01390.pdf"> Automated Machine Learning for Deep Recommender Systems: A Survey 
+		<div>Our Survey Paper: <a href="https://arxiv.org/pdf/2209.10117.pdf"> A Comprehensive Survey on Trustworthy Recommender Systems
 </a></div>
 
 			
-	       <div>Tutorial Website: <a href="https://advanced-recommender-systems.github.io/AutoML-Recommendations/">https://advanced-recommender-systems.github.io/AutoML-Recommendations/</a> </div>
+	       <div>Tutorial Website: <a href="https://advanced-recommender-systems.github.io/trustworthiness-tutorial/">https://advanced-recommender-systems.github.io/trustworthiness-tutorial/</a> </div>
 
 			
 		</p>	
 		    
 		<h2 style="color:black;"><b>Tutorial Syllabus <a href="doc/AutoML_RecSys_WWW2022.pdf">[Slides]</a> <a href="https://www.youtube.com/watch?v=qUSeG2HIvcg"> [Video]</a></b> </h2>
 			
-		<div>Our Survey Paper: <a href="https://arxiv.org/pdf/2204.01390.pdf"> Automated Machine Learning for Deep Recommender Systems: A Survey 
+		<div>Our Survey Paper: <a href="https://arxiv.org/pdf/2209.10117.pdf"> A Comprehensive Survey on Trustworthy Recommender Systems 
 </a></div>
 		<p class="large text-muted">
 		The topics of this tutorial include (but are not limited to) the following:
 		<ol>	
-			<strong> <li style="color:black;">Introduction to Deep Recommender System (DRS) </li>  </strong>
-			<strong> <li style="color:black;">Preliminary of Automated Machine Learning (AutoML) </li></strong>
-			<strong> <li style="color:black;">AutoML for DRS Embedding Components </li></strong>
-			<strong> <li style="color:black;">AutoML for DRS Interaction Components </li></strong>
-			<strong> <li style="color:black;">AutoML for Whole DRS Architecture Search </li></strong>
-			<strong> <li style="color:black;">Conclusion and Future Direction </li></strong>
+			<strong> <li style="color:black;">Introduction to Trustworthy Recommender System (TRec) </li>  </strong>
+			<strong> <li style="color:black;">Safety & Robustness </li></strong>
+			<strong> <li style="color:black;">Non-discrimination & Fairness </li></strong>
+			<strong> <li style="color:black;">Explainability </li></strong>
+			<strong> <li style="color:black;">Privacy </li></strong>
+			<strong> <li style="color:black;">Environmental Well-being </li></strong>
+			<strong> <li style="color:black;">Accountability & Auditability </li></strong>
+			<strong> <li style="color:black;">Dimension Interactions & Future Directions </li></strong>
 			
 		</ol>
 
