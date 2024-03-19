@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Trustworthy Recommender Systems</title>
+    <title>Neural Contextual Bandits for Personalized  Recommendation </title>
 
     <!-- favicon 
     <link href="favicon.png" rel=icon>-->
@@ -75,38 +75,16 @@
     <div class="jumbotron text-center">
         <div class="content">
             <h1>Trustworthy Recommender Systems</h1>
-	    <h2 style="color:#FFFFFF;"><b>Keywords: Recommender Systems, Robustness, Fairness, Explainability, Privacy, Environmental Well-being, Accountability, Auditability</b> </h2>	
-	    <h2 style="color:#FFFFFF;"><b>Event Date: 2:30 AM - 6:00 AM  (Beijing Time) or 13:30 PM - 17:00 PM (Central Time), Monday, May 1, 2023 </b> </h2>
-	    <h2 style="color:#FFFFFF;"><b>Zoom Meeting ID: 851 066 0728, Passcode: 5511 <a href="https://polyu.zoom.us/j/8510660728">Link</a> </b> </h2>
-	    	    <h2 style="color:#FFFFFF;"><b>Our Survey Paper: <a href="https://arxiv.org/pdf/2209.10117.pdf"> A Comprehensive Survey on Trustworthy Recommender Systems
-</a> </b> </h2>
+	    <h2 style="color:#FFFFFF;"><b>Keywords: Neural Contextual Bandits; Personalized Recommendation</b> </h2>	
+	    <h2 style="color:#FFFFFF;"><b>Event Date:  </b> </h2>
+	    <h2 style="color:#FFFFFF;"><b>Zoom Meeting ID: <a href="https://polyu.zoom.us/j/8510660728">Link</a> </b> </h2>
+	    	   
 
 	    
 	    
 	    
 
 
-	    
-	    
-            <!--<div class="event-date">9:00 - 11:45 PM, April 16, 2021 (EST time)</div>-->
-	     <!--
-	    <h2 style="color:#FFFFFF;"><b>Zoom Link:  <a href="https://TBD">TBD </a ></b> </h2>
-
-		<h2 style="color:#FFFFFF;"><b>Introduction to Deep Recommender System (DRS)</b> </h2>
-	    <h2 style="color:#FFFFFF;"><b>Preliminary of Automated Machine Learning (AutoML)</b> </h2>
-	    <h2 style="color:#FFFFFF;"><b>AutoML for DRS Embedding Components</b> </h2>
-	    <h2 style="color:#FFFFFF;"><b>AutoML for DRS Interaction Components</b> </h2>
-	    <h2 style="color:#FFFFFF;"><b>AutoML for Whole DRS Architecture Search</b>  </h2>
-            <h2 style="color:#FFFFFF;"><b>Conclusion and Future Direction</b>  </h2>
-            
-	    -->
-	    <!--<h2 style="color:#0F1555;"><b><a href="https://msu.zoom.us/j/94465359383">Zoom Link to Tutorial</a></b></h2>-->
-            <!--<div class="event-date">Summit 1 - Ground Level, Egan, Anchorage, Alaska - USA</div>
-            <!--<p class="lead">It's a tag line, where you can write a key point of your idea. It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
-            <button type="button" class="btn btn-default btn-lg">STAY IN THE LOOP</button>-->
-        </div>
-    </div>
-    <!-- .Jumbotron-->
     
     
     <!-- Introduction Section -->
@@ -121,25 +99,17 @@
                 <div class="col-md-12">
                    
 			<p class="large text-muted">
-			    In the past few decades, the explosive growth of the World Wide Web (WWW) has promoted the increasing demand for recommendation services because of information overload problems. Nowadays, recommender systems as intelligent filtering tools have played an increasingly important role in people’s daily lives via their successful deployments in various user-oriented online services, such as online shopping, jobs matching, financial product recommendations, and medical recommendations. More recently, inspired by the great success of Deep Neural Networks (DNNs) in powerful representation learning abilities, DNN-based recommendation techniques have shown impressive performance across a wide range of tasks.
-
-			</p>
+			    In the dynamic landscape of online businesses, recommender systems are pivotal in enhancing user experiences. While traditional approaches have relied on static supervised learning, the quest for adaptive, user-centric recommendations has led to the emergence of the formulation of contextual bandits. This tutorial investigates the contextual bandits as a powerful framework for personalized recommendations. We delve into the challenges, advanced algorithms and theories, collaborative strategies, and open challenges and future prospects within this field.
+Different from existing related tutorials, (1) we focus on the exploration perspective of contextual bandits to alleviate the ``Matthew Effect'' in the recommender systems, i.e., the rich get richer and the
+poor get poorer, concerning the popularity of items; (2) in addition to the conventional linear contextual bandits, we will also dedicated to neural contextual bandits which have emerged as an important branch in recent years, to investigate how neural networks benefit contextual bandits for personalized recommendation both empirically and theoretically; (3) we will cover the latest topic,   collaborative neural contextual bandits, to incorporate both user heterogeneity and user correlations customized for recommender system; (4) we will provide and discuss the new emerging challenges and open questions for neural contextual bandits with applications in the personalized recommendation, especially for large neural models.  	</p>
                     
 		<p class="large text-muted">
-			
-                Although recommender systems can benefit people in daily life, recent studies show that they can have negative impacts on human beings. For example, recommender systems are highly vulnerable to adversarial attacks, where recommendation results can be manipulated by attackers with malicious desires. Meanwhile, the recommendation algorithms can inherit and even magnify the bias behaviors from training datasets, leading to discriminatory predictions for underrepresented groups. In addition, recommender systems are also vulnerable to privacy attacks. For instance, malicious attackers can infer users’ private information from public data. Due to the complicated working mechanisms, recommender systems
-often make black-box decisions that are hard to be explained to various stakeholders, resulting in unreliable recommendation predictions. These untrustworthy aspects in recommender systems can make unreliable recommendation results and then produce significant harmful effects in various real-world applications, especially those in safety-critical areas such as finance and healthcare, resulting in severe economic, social, and security consequences.
-		
-			
+			Compared with other greedy personalized recommendation approaches, Contextual Bandits techniques provide distinct ways of modeling user preferences.
+We believe this tutorial can benefit researchers and practitioners by appreciating the power of exploration and the performance guarantee brought by neural contextual bandits, as well as rethinking the challenges caused by the increasing complexity of neural models and the magnitude of data.
+              	
 		</p>
 		
-		<p class="large text-muted">
-			
-		To mitigate these untrustworthy aspects, a great amount of research on trustworthy recommender systems has emerged in recent years. In this tutorial, we will timely provide a comprehensive overview of <strong>T</strong>rustworthy <strong>Rec</strong>ommender systems (<strong>TRec</strong>) with a specific focus on six of the most crucial aspects; namely, Safety & Robustness, Nondiscrimination & Fairness, Explainability, Privacy, Environmental Well-being, and Accountability & Auditability. For each aspect, we will summarize the recent related technologies and discuss potential research directions to help achieve trustworthy recommender systems in the future.
-			
-			
-			
-		</p>
+
 		
 		<p class="large text-muted">
 				
@@ -147,8 +117,7 @@ often make black-box decisions that are hard to be explained to various stakehol
 		
 		<div>Zoom Meeting ID: 851 066 0728, Passcode: 5511, <a href="https://polyu.zoom.us/j/8510660728"> Link </a> </div>
 			
-		<div>Our Survey Paper: <a href="https://arxiv.org/pdf/2209.10117.pdf"> A Comprehensive Survey on Trustworthy Recommender Systems
-</a></div>
+	
 
 			
 	       <div>Tutorial Website: <a href="https://advanced-recommender-systems.github.io/trustworthiness-tutorial/">https://advanced-recommender-systems.github.io/trustworthiness-tutorial/</a> </div>
@@ -163,14 +132,7 @@ often make black-box decisions that are hard to be explained to various stakehol
 		<p class="large text-muted">
 		The topics of this tutorial include (but are not limited to) the following:
 		<ol>	
-			<strong> <li style="color:black;">Introduction to Trustworthy Recommender System (TRec) </li>  </strong>
-			<strong> <li style="color:black;">Non-discrimination & Fairness </li></strong>
-			<strong> <li style="color:black;">Safety & Robustness </li></strong>
-			<strong> <li style="color:black;">Explainability </li></strong>
-			<strong> <li style="color:black;">Privacy </li></strong>
-			<strong> <li style="color:black;">Environmental Well-being </li></strong>
-			<strong> <li style="color:black;">Accountability & Auditability </li></strong>
-			<strong> <li style="color:black;">Dimension Interactions & Future Directions </li></strong>
+			<strong> <li style="color:black;">Neural Contextual Bandits </li>  </strong>
 			
 		</ol>
 	       <div>Slides: <strong><a href="doc/2023-WWW-Trustworthy-Recommender-Systems-Slides-1.pdf">[TRec-Slides-1]</a> <a href="doc/2023-WWW-Trustworthy-Recommender-Systems-Slides-2.pdf">[TRec-Slides-2]</a></strong></div>
@@ -361,35 +323,8 @@ often make black-box decisions that are hard to be explained to various stakehol
                 <div class="col-md-12">
                    
 		<p class="large text-muted">
-<a href="https://wenqifan03.github.io/"><strong>Dr. Wenqi Fan</strong></a > is a research assistant professor of the Department of Computing at The Hong Kong Polytechnic University (PolyU). He received his Ph.D. degree from the City University of Hong Kong (CityU) in 2020. From 2018 to 2020, he was a visiting research scholar at Michigan State University. His research interests are in the broad areas of machine learning and data mining, with a particular focus on Recommender Systems, Graph Neural Networks, and Adversarial Attacks. He has published innovative papers in top-tier journals and conferences such as IEEE TKDE, KDD, WWW, NeurIPS, ICDE, IJCAI, AAAI, RecSys, WSDM, and SDM. He serves as top-tier conference (senior) program committee members (e.g., ICML, ICLR, NeurIPS, KDD, WWW, AAAI, IJCAI, CIKM, WSDM, etc.), and journal reviewers (e.g., TKDE, TIST, TKDD, TOIS, TAI, etc.). He also serves as the lead tutor of tutorials in top-tier conferences (e.g., WWW 2021, IJCAI 2021, and ICAPS 2021). More information about him can be found at https://wenqifan03.github.io/.
-			
-		</p>
-		<p class="large text-muted">	
- <a href="https://zhaoxyai.github.io/"><strong>Dr. Xiangyu Zhao</strong> </a >is an assistant professor of the school of data science at City University of Hong Kong (CityU). Prior to CityU, he completed his PhD (2021) at MSU, MS (2017) at USTC and BEng (2014) at UESTC. His current research interests include data mining and machine learning, especially (1) Personalization, Recommender System, Online Advertising, Search Engine, and Information Retrieval; and (2) Deep Reinforcement Learning, AutoML, Trustworthy AI and Multimodal ML. He has published more than 50 papers in top conferences (e.g., KDD, WWW, AAAI, SIGIR, IJCAI, ICDE, CIKM, ICDM, WSDM, RecSys, ICLR) and journals (e.g., TOIS, SIGKDD, SIGWeb, EPL, APS). His research has been awarded ICDM’21 Best-ranked Papers, Global Top 100 Chinese New Stars in AI, CCF-Tencent Open Fund, Criteo Research Award, Bytedance Research Award, MSU Dissertation Fellowship, and nomination for Joint AAAI/ACM SIGAI Doctoral Dissertation Award. He serves as the organizers of DRL4KDD@KDD’19, DRL4IR@SIGIR’20, 2nd DRL4KD@WWW’21, 2nd DRL4IR@SIGIR’21, 3rd DRL4IR@SIGIR’22. Please find more information at https://zhaoxyai.github.io/. Dr. Zhao is a lead tutor at WWW’21/22 and IJCAI’21.
-	           
-		</p>
-		<p class="large text-muted">
-<a href="."> <strong>Lin Wang</strong></a > is currently a PhD student at The Hong Kong Polytechnic University. He got his B.Eng. and MSc degrees at Northwestern Polytechnical University (NPU). His research interests include recommender systems and Graph Neural Networks.
-			
-		</p>
-                <p class="large text-muted">
-<a href="."> <strong>Xiao Chen</strong></a > is currently a PhD student at The Hong Kong Polytechnic University. He got his MSc degree in Zhejiang University (ZJU) and his B.Eng. at Northwestern Polytechnical University (NPU). His research interests include fairness recommender systems and Graph Neural Networks.	           
+<a href="https://wenqifan03.github.io/"><strong>Dr. Yikun Ban</strong></a >  </p>
 		
-			
-		</p>
-		<p class="large text-muted">
-<a href="."> <strong>Jingtong Gao</strong></a > is currently a PhD student at the City University of Hong Kong (CityU) under the advisory of Prof. Xiangyu Zhao. Prior to CityU, he got his MSc degree at Nanyang Technological University (NTU) and his B.Eng. in Beihang University (BUAA).
-
-			
-		</p>
-		<p class="large text-muted">
-<a href="."> <strong> Qidong Liu </strong> </a >  is currently a joint-PhD with the City University of Hong Kong (CityU) and Xi’an Jiaotong University (XJTU). He got his B.Eng. degree at Xi’an Jiaotong University in 2019. His research interests include Recommender Systems and Causal Inference.
-		</p>
-		<p class="large text-muted">
-<a href="."> <strong> Shijie Wang </strong> </a >  is currently an MPhil student at Hong Kong Polytechnic University. He got his BSc degree at the University of Liverpool (Uol). His research interests include recommender systems and Graph Neural Networks.
-		
-			
-		</p>
 			
 			
 			
